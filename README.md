@@ -1,7 +1,8 @@
 # COMPUTER-NETWORK-ASSIGNMENT-1-
 
-Experiment 1 – Basic Network Topologies
-Course: ENCS304 Computer Networks
+Experiment 1 – Basic Network Topologies ,
+Course: ENCS304 Computer Networks,
+
 Name: Shubham
 Roll no. - 2301730100 
 
