@@ -1,0 +1,63 @@
+ENCS304 – Computer Networks
+Experiment 1 – Basic Network Topologies
+Name: Shubham
+Roll No. - 2301730100
+Program: B.Tech CSE (AI & ML)
+
+-----------------------------
+TASK 1 – STAR TOPOLOGY (Switch)
+-----------------------------
+
+PC1 > ping 192.168.10.2
+Reply from 192.168.10.2: bytes=32 time<1ms TTL=128
+
+PC1 > ping 192.168.10.3
+Reply from 192.168.10.3: bytes=32 time<1ms TTL=128
+
+PC1 > ping 192.168.10.4
+Reply from 192.168.10.4: bytes=32 time<1ms TTL=128
+
+Observation:
+All pings successful.
+Switch forwards packets only to destination port.
+Good performance, no unnecessary broadcast.
+
+-----------------------------
+TASK 2 – HUB TOPOLOGY
+-----------------------------
+
+PC1 > ping 192.168.10.2
+Reply from 192.168.10.2: bytes=32 time<1ms TTL=128
+
+PC2 > ping 192.168.10.3
+Reply from 192.168.10.3: bytes=32 time<1ms TTL=128
+
+Observation:
+Hub broadcasts packets to all ports.
+More collisions observed in simulation mode.
+Slower than switch.
+
+-----------------------------
+TASK 3 – RING-LIKE TOPOLOGY
+-----------------------------
+
+PC10 > ping 192.168.10.14
+Reply from 192.168.10.14: bytes=32 time<1ms TTL=128
+
+Observation:
+Packets travel across multiple switches.
+Network supports alternate path.
+
+-----------------------------
+TASK 4 – FAILURE TEST
+-----------------------------
+
+Disconnected one link between switches.
+
+Ping test after disconnection:
+Reply from 192.168.10.14: bytes=32 time<1ms TTL=128
+
+Observation:
+Communication still works.
+Alternate path used.
+Ring topology shows better fault tolerance.
